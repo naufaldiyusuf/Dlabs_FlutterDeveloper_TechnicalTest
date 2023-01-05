@@ -75,6 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
             setState(() {});
           } else if (state is ListGetNextError) {
             isLoadingNext = false;
+            isNextProcess = false;
             setState(() {});
             showAlertDialogError(context, "There's something wrong, please try again");
           }
